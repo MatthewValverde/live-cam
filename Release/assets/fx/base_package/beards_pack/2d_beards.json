@@ -1,0 +1,169 @@
+{
+	
+	"iconPath": "./assets/fx/base_package/beards_pack/icons/beard.png",
+	
+	"models": [
+	{
+		"type": "EmojiModel",
+		"name": "Smile"
+	}],
+  
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoFragmentShader.txt",
+      "alphaTest": "true",
+      "blend": "true",
+      "TAG": "smile & tongue 0"
+    }
+  ],
+	
+	"initialModules": [0, 1, 2, 3, 4],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/1.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/1.png",
+          "emojiOffset": [ 0, -1.1, -0.06 ],
+          "emojiScale": [ 0.91, 1 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/2.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/2.png",
+          "emojiOffset": [ 0, -1.1, -0.06 ],
+          "emojiScale": [ 0.91, 1 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/3.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/3.png",
+          "emojiOffset": [ 0, -1.1, -0.06 ],
+          "emojiScale": [ 0.91, 1 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/4.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/4.png",
+          "emojiOffset": [ 0, -1.12, 0 ],
+          "emojiScale": [ 1.56, 1.56 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/5.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/5.png",
+          "emojiOffset": [ 0, -1.12, 0 ],
+          "emojiScale": [ 1.56, 1.56 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/6.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/6.png",
+          "emojiOffset": [ 0, -1.12, 0 ],
+          "emojiScale": [ 1.56, 1.56 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/7.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/7.png",
+          "emojiOffset": [ 0, -1.51, 0 ],
+          "emojiScale": [ 1.72, 1.72 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/8.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/8.png",
+          "emojiOffset": [ 0, -1.51, 0 ],
+          "emojiScale": [ 1.72, 1.72 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/9.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/9.png",
+          "emojiOffset": [ 0, -1.51, 0 ],
+          "emojiScale": [ 1.72, 1.72 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/10.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/10.png",
+          "emojiOffset": [ 0, -1.28, -0.08 ],
+          "emojiScale": [ 1.56, 1.56 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/11.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/11.png",
+          "emojiOffset": [ 0, -1.28, -0.08 ],
+          "emojiScale": [ 1.56, 1.56 ],
+          "emojiRotation": "true"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/beard_2d/12.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/12.png",
+          "emojiOffset": [ 0, -1.28, -0.08 ],
+          "emojiScale": [ 1.56, 1.56 ],
+          "emojiRotation": "true"
+        }
+      ]
+    }
+  ]
+}

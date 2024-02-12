@@ -1,0 +1,64 @@
+{
+  "iconPath": "./assets/fx/islanders/john_tonelli_hairs/icon.png",
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "modelScale": 1.75,
+      "draw2DMask": "false",
+      "modelShift": [ 0, -0.2, 0.1 ]
+    },
+    {
+      "type": "3DModel",
+      "name": "john_tonelli_hairs",
+      "OBJ": "./assets/fx/islanders/john_tonelli_hairs/john_tonelli_hair_v2.obj",
+      "modelShift": [ 0, -0.1, 0.1 ],
+      "modelScale": 1.6
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/islanders/john_tonelli_hairs/john_tonelli_mustache_v2.obj",
+      "modelShift": [ 0, -0.02, 0.01 ],
+      "modelScale": 0.6
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "blend": "false",
+      "alphaTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/islanders/john_tonelli_hairs/icon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/islanders/john_tonelli_hairs/tex/JT Hair_Albedo.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/islanders/john_tonelli_hairs/tex/JT Hair_Albedo.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

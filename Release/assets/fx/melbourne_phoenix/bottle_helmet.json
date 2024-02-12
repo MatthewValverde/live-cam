@@ -1,0 +1,59 @@
+{
+  "iconPath": "./assets/fx/melbourne_phoenix/bottle_helmet/icon.png",
+
+  "skybox": [
+    "./assets/cubemaps/hockey_stadium/posx.jpg",
+    "./assets/cubemaps/hockey_stadium/negx.jpg",
+    "./assets/cubemaps/hockey_stadium/posy.jpg",
+    "./assets/cubemaps/hockey_stadium/negy.jpg",
+    "./assets/cubemaps/hockey_stadium/posz.jpg",
+    "./assets/cubemaps/hockey_stadium/negz.jpg"
+  ],
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "modelScale": 1.7,
+      "draw2DMask": "false",
+      "modelShift": [ 0, -0.3, 0.1 ]
+    },
+    {
+      "type": "3DModel",
+      "name": "helmet",
+      "OBJ": "./assets/fx/melbourne_phoenix/bottle_helmet/BOTTLE_HELMET.obj",
+      "modelShift": [ 0, 0.15, 0.15 ],
+      "modelScale": 2.1
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/cubemapPhongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ],
+        [ "reflectionRatio", 0.15 ]
+      ]
+    }
+  ],
+  
+  "modules": [
+    {
+      "iconPath": "./assets/fx/melbourne_phoenix/bottle_helmet/icon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/melbourne_phoenix/bottle_helmet/tex/BOTTLE_HELMET_1_BOTTLE_HELMET_BaseColor.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

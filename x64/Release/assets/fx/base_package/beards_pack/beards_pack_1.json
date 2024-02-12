@@ -1,0 +1,224 @@
+{
+ 
+   "iconPath": "./assets/fx/base_package/beards_pack/icons/zz_top.png",
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "draw2DMask": "false",
+      "zOffset": 0
+    },
+    {
+      "type": "EmojiModel",
+      "name": "Smile"
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/beards_pack/hipsterBeard/HipsterBeard_top_v1.obj",
+      "modelShift": [ 0, 0, 0 ],
+      "modelScale": 1.25
+    },
+    {
+      "type": "LipsBottomJoint3DModel",
+      "name": "Bottom",
+      "OBJ": "./assets/fx/base_package/beards_pack/hipsterBeard/HipsterBeard_bottom_v1.obj",
+      "modelShift": [ 0.04, -0.28, 0 ],
+      "modelScale": 1.25
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/beards_pack/zzTop/ZZtop_beard_top.obj",
+      "modelShift": [ 0.03, 0.03, 0 ],
+      "modelScale": 0.7
+    },
+    {
+      "type": "LipsBottomJoint3DModel",
+      "name": "Bottom",
+      "OBJ": "./assets/fx/base_package/beards_pack/zzTop/ZZtop_beard_bottom.obj",
+      "modelShift": [ 0, -0.58, 0 ],
+      "modelScale": 1
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoFragmentShader.txt",
+      "depthTest": "false",
+      "blend": "true",
+      "TAG": "smile & tongue 0"
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/normalMaps/hairs_vertical.png",
+      "blend": "true",
+      "depthTest": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/normalMaps/hairs_vertical.png",
+      "blend": "true",
+      "depthTest": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.7, 0.7, 0.7 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],
+
+  "initialModules": [ 0, 0, 0, 0, 0 ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/icons/beard.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/beard.png",
+          "emojiScale": [ 1.9, 1.9 ],
+          "emojiOffset": [ 0, -0.15, 0 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/icons/Beard2.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/Beard2.png",
+          "emojiScale": [ 1.9, 1.9 ],
+          "emojiOffset": [ 0, -0.15, 0 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/icons/Beard3.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/beards_pack/beard_2d/Beard3.png",
+          "emojiScale": [ 2, 2 ],
+          "emojiOffset": [ 0, -0.05, 0 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/icons/beardIcon.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 1 ],
+          "modelTextures": [
+            "./assets/fx/base_package/beards_pack/hipsterBeard/tex/hipsterBeard_smoothed.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 1 ],
+          "modelTextures": [
+            "./assets/fx/base_package/beards_pack/hipsterBeard/tex/hipsterBeard_smoothed.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/beards_pack/icons/zz_top.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/beards_pack/zzTop/tex/beardwithAlpha_v4.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/beards_pack/zzTop/tex/beardwithAlpha_v4.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

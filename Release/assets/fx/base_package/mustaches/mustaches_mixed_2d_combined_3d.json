@@ -1,0 +1,276 @@
+{
+  "iconPath": "./assets/fx/base_package/mustaches/icons/muchiall.png",
+
+	"models": [
+    {
+      "type": "EmojiModel",
+      "name": "Smile"
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/bushey_mustache/BusheyMustach_v01.obj",
+      "modelShift": [ 0, -0.1, 0 ],
+      "modelScale": 1
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/handlebar_mustache/handleBar_mustache.obj",
+      "modelShift": [ 0, 0.03, 0 ],
+      "modelScale": 1
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/redlegs_hat_mustache/Red_Leg_SOLOMustache.obj",
+      "modelShift": [ 0, 0.05, 0 ],
+      "modelScale": 1
+    }
+	],
+  
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoFragmentShader.txt",
+      "depthTest": "false",
+      "blend": "true",
+      "TAG": "smile & tongue 0"
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/fx/base_package/mustaches/mustaches_3d/bushey_mustache/tex/Eyebrow Normal.png",
+      "alphaTest": "true",
+      "blend": "true",
+      "depthTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    },
+     {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "alphaTest": "true",
+      "blend": "true",
+      "depthTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi1.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi1.png",
+          "emojiOffset": [ 0, -0.88, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi2.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi2.png",
+          "emojiOffset": [ 0, -0.6, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi3.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi3.png",
+          "emojiOffset": [ 0, -0.81, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi4.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi4.png",
+          "emojiOffset": [ 0, -0.91, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi5.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi5.png",
+          "emojiOffset": [ 0, -1.04, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi6.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi6.png",
+          "emojiOffset": [ 0, -0.85, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi7.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "emojiTexture": "./assets/fx/base_package/mustaches/2d_mixed_filters/muchi7.png",
+          "emojiOffset": [ 0, -0.72, 0 ],
+          "emojiScale": [ 1, 1 ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/bushey_Mustache.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 1 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/bushey_mustache/tex/Dark_CurlyHair2.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/handlebar_mustache.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/handlebar_mustache/tex/texture_01.png"
+          ]
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/redleg_mustache.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/redlegs_hat_mustache/tex/BaseColor.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

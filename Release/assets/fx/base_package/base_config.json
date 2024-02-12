@@ -1,0 +1,33 @@
+{
+  "filters": [
+    {
+      "title": " Emojis",
+      "icon": "./assets/fx/emoji/Asset 3@20x.png",
+      "JSONsource": "./assets/fx/emoji/emojis.json"
+    },
+    {
+      "title": " Animated Emojis",
+      "JSONsource": "./assets/fx/emojis_animated/emoji_animated_atlas_2018.json"
+    },
+    {
+      "title": " 3D Dog Filters",
+      "JSONsource": "./assets/fx/dog/dog_filters.json"
+    },
+    {
+      "title": "Viking Helmet Filter",
+      "JSONsource": "./assets/fx/base_package/viking_helmet/x_games_viking.json"
+    },
+    {
+      "title": "Mustaches Filters",
+      "JSONsource": "./assets/fx/base_package/mustaches/mustaches_mixed_2d_combined_3d.json"
+    },
+    {
+      "title": "Beards Filters 3D",
+      "JSONsource": "./assets/fx/base_package/beards_pack/beards_pack_3d.json"
+    },
+    {
+      "title": "Beards Filters 2D",
+      "JSONsource": "./assets/fx/base_package/beards_pack/2d_beards.json"
+    }
+  ]
+}

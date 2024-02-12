@@ -1,0 +1,50 @@
+{
+
+  "title": "Rockets Harden Beard Filter",
+
+  "iconPath": "./assets/fx/icons/beardIcon.png",
+
+  "models": [
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/houston_rockets/harden_beard/Harden_Beard.obj",
+      "modelShift": [ 0, -0.2, 0 ],
+      "modelScale": 1
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/fx/houston_rockets/harden_beard/normals.jpg",
+      "blend": "true",
+      "depthTest": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    }
+  ],
+
+  "initialModules": [ 0, 0, 0, 0, 0 ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/icons/beardIcon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/houston_rockets/harden_beard/Dark_CurlyHair2.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

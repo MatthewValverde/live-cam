@@ -1,0 +1,44 @@
+{
+  "iconPath": "./assets/fx/melbourne_phoenix/trumpet/icon.png",
+
+  "models": [
+    {
+      "type": "3DModel",
+      "OBJ": "./assets/fx/melbourne_phoenix/trumpet/trumpet.obj",
+      "modelShift": [ 0.12, -0.52, 1.1 ],
+      "modelScale": 0.5
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "alphaTest": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 1, 1, 1 ],
+        [ "specularPower", 20 ]
+
+      ]
+    }
+  ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/melbourne_phoenix/trumpet/icon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/melbourne_phoenix/trumpet/tex/trumpet.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

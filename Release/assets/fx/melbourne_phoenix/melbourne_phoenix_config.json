@@ -1,0 +1,41 @@
+{
+  "filters": [
+    {
+      "title": "Bottle Helmet",
+      "JSONsource": "./assets/fx/melbourne_phoenix/bottle_helmet.json"
+    },
+    {
+      "title": "Facepaint",
+      "JSONsource": "./assets/fx/melbourne_phoenix/facepaint.json"
+    },
+    {
+      "title": "Mascot",
+      "JSONsource": "./assets/fx/melbourne_phoenix/mascot.json"
+    },
+    {
+      "title": "Trumpet",
+      "JSONsource": "./assets/fx/melbourne_phoenix/trumpet.json"
+    },
+    {
+      "title": " Emojis",
+      "icon": "./assets/fx/emoji/Asset 3@20x.png",
+      "JSONsource": "./assets/fx/emoji/emojis.json"
+    },
+    {
+      "title": " Animated Emojis",
+      "JSONsource": "./assets/fx/emojis_animated/emoji_animated_atlas_2018.json"
+    },
+    {
+      "title": " 3D Dog's",
+      "JSONsource": "./assets/fx/dog/dog_filters.json"
+    },
+    {
+      "title": "Mustaches",
+      "JSONsource": "./assets/fx/base_package/mustaches/mustaches_mixed_combined_3d.json"
+    },
+    {
+      "title": "Beards",
+      "JSONsource": "./assets/fx/base_package/beards_pack/2d_beards.json"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "models": [
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/hockey_bucket/zzTop/ZZtop_beard_top.obj",
+      "modelShift": [ 0.03, 0.03, 0 ],
+      "modelScale": 0.7
+    },
+    {
+      "type": "LipsBottomJoint3DModel",
+      "name": "Bottom",
+      "OBJ": "./assets/fx/hockey_bucket/zzTop/ZZtop_beard_bottom.obj",
+      "modelShift": [ 0, -0.58, 0 ],
+      "modelScale": 1
+    }
+  ],
+
+  "renderParams": [
+    {
+	  "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/normalMaps/hairs_vertical.png",
+      "blend": "true",
+      "depthTest": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    }
+  ],	
+	
+	"initialModules": [0, 0, 0, 0, 0],
+
+  "modules": [    
+    {
+      "iconPath": "./assets/fx/hockey_bucket/icons/zz_top.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/hockey_bucket/zzTop/tex/beardwithAlpha_v4.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/hockey_bucket/zzTop/tex/beardwithAlpha_v4.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

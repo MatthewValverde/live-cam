@@ -1,0 +1,59 @@
+{
+  "iconPath": "./assets/fx/melbourne_phoenix/mascot/mascot.png",
+
+  "models": [
+    {
+      "type": "3DModel",
+      "name": "antlers",
+      "OBJ": "./assets/fx/melbourne_phoenix/mascot/mascot.obj",
+      "modelShift": [ 0, 0.4, -0.15 ],
+      "modelScale": 1.8
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 1, 0, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 1, 1, 1 ],
+        [ "specularPower", 20 ]
+      ]
+    },
+    {
+      "COMMENT": "Hairs",
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "blend": "true",
+      "alphaTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 1, 1, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],	
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/melbourne_phoenix/mascot/mascot.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/melbourne_phoenix/mascot/tex/Phoenix_Albedo.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

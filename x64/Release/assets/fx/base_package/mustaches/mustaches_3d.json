@@ -1,0 +1,44 @@
+{
+  "models": [
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/hockey_bucket/hipsterBeard/HipsterBeard_top_v1.obj",
+      "modelShift": [ 0, 0, 0 ],
+      "modelScale": 1.25
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/normalMaps/hairs_vertical.png",
+      "alphaTest": "true",
+      "blend": "true",
+      "depthTest": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    }
+  ],	
+	
+  "modules": [    
+    {
+      "iconPath": "./assets/fx/hockey_bucket/icons/beardIcon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/hockey_bucket/hipsterBeard/tex/hipsterBeard_smoothed.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

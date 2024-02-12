@@ -1,0 +1,50 @@
+{
+  "iconPath": "./assets/fx/islanders/puck_hat/icon.png",
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "modelScale": 1.75,
+      "draw2DMask": "false",
+      "modelShift": [ 0, -0.2, 0.05 ]
+    },
+    {
+      "type": "3DModel",
+      "name": "puck_hat",
+      "OBJ": "./assets/fx/islanders/puck_hat/Americans_PuckHat_v2.obj",
+      "modelShift": [ 0, 0.6, 0.15 ],
+      "modelScale": 1.7
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "blend": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],	
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/islanders/puck_hat/icon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/islanders/puck_hat/PuckHat_UVMap.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

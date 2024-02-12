@@ -1,0 +1,50 @@
+{
+  "iconPath": "./assets/fx/islanders/helmet/icon.png",
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "modelScale": 1.75,
+      "draw2DMask": "false",
+      "modelShift": [ 0, -0.2, 0.05 ]
+    },
+    {
+      "type": "3DModel",
+      "name": "helmet",
+      "OBJ": "./assets/fx/islanders/helmet/helmet_model.obj",
+      "modelShift": [ 0, -0.05, 0.15 ],
+      "modelScale": 1.3
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "blend": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],	
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/islanders/helmet/icon.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/islanders/helmet/tex/Helmet 2_Albedo.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

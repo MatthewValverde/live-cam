@@ -1,0 +1,319 @@
+{
+  "iconPath": "./assets/fx/base_package/mustaches/icons/muchiall.png",
+
+	"models": [
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/standard/mustache_base.obj",
+      "modelShift": [ 0, 0.02, 0 ],
+      "modelScale": 0.9
+    },
+    {
+      "type": "LipsBottomJoint3DModel",
+      "name": "Bottom",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/standard/mustache_base.obj",
+      "modelShift": [ 0, 0.02, 0 ],
+      "modelScale": 0.9
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/bushey_mustache/BusheyMustach_v01.obj",
+      "modelShift": [ 0, -0.06, 0 ],
+      "modelScale": 1
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/handlebar_mustache/handleBar_mustache.obj",
+      "modelShift": [ 0, 0.05, 0 ],
+      "modelScale": 1
+    },
+    {
+      "type": "LipsJoint3DModel",
+      "name": "Top",
+      "OBJ": "./assets/fx/base_package/mustaches/mustaches_3d/redlegs_hat_mustache/Red_Leg_SOLOMustache.obj",
+      "modelShift": [ 0, 0.085, 0 ],
+      "modelScale": 1
+    }
+	],
+  
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoFragmentShader.txt",
+      "depthTest": "false",
+      "blend": "true",
+      "TAG": "smile & tongue 0"
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/normalMapVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/normalMapPhongFragmentShader.txt",
+      "normalMap": "./assets/fx/base_package/mustaches/mustaches_3d/bushey_mustache/tex/Eyebrow Normal.png",
+      "alphaTest": "true",
+      "blend": "true",
+      "depthTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0, 0, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.4, 0.4, 0.4 ],
+        [ "specularLight", 0.2, 0.2, 0.2 ],
+        [ "specularPower", 10 ]
+      ]
+    },
+     {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "alphaTest": "true",
+      "blend": "true",
+      "depthTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ]
+      ]
+    }
+  ],
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi1.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi1.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi2.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi2.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi3.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi3.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi4.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi4.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi4.bottom.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi5.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi5.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi6.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi6.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/muchi7.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/standard/tex/muchi7.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/bushey_Mustache.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 1 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/bushey_mustache/tex/Dark_CurlyHair2.png"
+          ]
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/handlebar_mustache.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/handlebar_mustache/tex/texture_01.png"
+          ]
+        },
+        {
+          "visible": "false"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/base_package/mustaches/icons/redleg_mustache.png",
+      "suits": [
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "visible": "false"
+        },
+        {
+          "renderParamsIDs": [ 2 ],
+          "modelTextures": [
+            "./assets/fx/base_package/mustaches/mustaches_3d/redlegs_hat_mustache/tex/BaseColor.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

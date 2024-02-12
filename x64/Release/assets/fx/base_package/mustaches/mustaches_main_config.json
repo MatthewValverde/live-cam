@@ -1,0 +1,9 @@
+{
+	"filters": [
+		{
+			"title": "Mustaches All Filters",
+			"icon": "./assets/fx/mustaches/icons/muchiall.png",
+			"JSONsource": "./assets/fx/mustaches/mustaches_mixed_2d.json"
+		}
+	]
+}
